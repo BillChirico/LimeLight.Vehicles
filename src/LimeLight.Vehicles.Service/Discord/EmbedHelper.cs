@@ -9,8 +9,8 @@ namespace LimeLight.Vehicles.Service.Discord
         public static Embed GetVehicleEmbed(List<Vehicle> vehicles)
         {
             var builder = new EmbedBuilder()
-                .WithTitle("LimeLife Vehicles")
-                .WithDescription("All current vehicles with their price")
+                .WithTitle("LimeLight Vehicles")
+                .WithDescription("All current vehicles with their price - Head down to PDM to purchase")
                 .WithColor(new Color(50, 205, 50))
                 .WithCurrentTimestamp();
 
