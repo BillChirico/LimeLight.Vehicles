@@ -1,6 +1,6 @@
-﻿using LimeLight.Vehicles.Domain;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using LimeLight.Vehicles.Domain;
 
 namespace LimeLight.Vehicles.Service.Discord
 {

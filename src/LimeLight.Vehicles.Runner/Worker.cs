@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -16,9 +15,9 @@ namespace LimeLight.Vehicles.Worker
 {
     public class Worker : BackgroundService
     {
-        private readonly ILogger<Worker> _logger;
         private readonly IDiscordBot _discordBot;
         private readonly DiscordSocketClient _discordSocketClient;
+        private readonly ILogger<Worker> _logger;
         private readonly IServiceScopeFactory _serviceProvider;
         private readonly ConfigSettings _settings;
 
@@ -42,14 +41,14 @@ namespace LimeLight.Vehicles.Worker
             _discordSocketClient.Ready += () =>
             {
                 _logger.LogInformation("Discord client is ready");
-                
+
                 return Task.CompletedTask;
             };
 
             _discordSocketClient.GuildAvailable += guild =>
             {
                 _logger.LogInformation("Discord guild is ready");
-                
+
                 mre.Set();
 
                 return Task.CompletedTask;
@@ -57,7 +56,7 @@ namespace LimeLight.Vehicles.Worker
 
             // Wait for all connectable services to be ready
             mre.WaitOne();
-            
+
             // Announce vehicles
             Task.Run(async () =>
             {

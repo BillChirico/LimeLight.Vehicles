@@ -15,12 +15,13 @@ namespace LimeLight.Vehicles.Worker
             CreateHostBuilder(args).Build().Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
+        public static IHostBuilder CreateHostBuilder(string[] args)
+        {
+            return Host.CreateDefaultBuilder(args)
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddHostedService<Worker>();
-                    
+
                     // Settings
                     services.Configure<ConfigSettings>(GetSettingsFile("appsettings.json", "Settings"));
 
@@ -31,12 +32,13 @@ namespace LimeLight.Vehicles.Worker
                     // Database
                     services.AddDbContext<VehicleContext>();
                 });
-        
+        }
+
         private static IConfigurationSection GetSettingsFile(string file, string section)
         {
             var builder = new ConfigurationBuilder();
 
-            builder.AddJsonFile("appsettings.json", false,true);
+            builder.AddJsonFile("appsettings.json", false, true);
 
             var configuration = builder.Build();
 

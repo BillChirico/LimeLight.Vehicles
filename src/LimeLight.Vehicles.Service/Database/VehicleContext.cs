@@ -12,7 +12,7 @@ namespace LimeLight.Vehicles.Service.Database
         {
             _settings = settings.Value;
         }
-        
+
         public DbSet<Vehicle> Vehicles { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
