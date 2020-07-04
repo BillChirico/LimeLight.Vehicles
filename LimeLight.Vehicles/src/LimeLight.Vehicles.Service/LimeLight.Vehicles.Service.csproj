@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Discord.Net" Version="2.3.0-dev-20200627.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.5" />
+      <PackageReference Include="morelinq" Version="3.3.2" />
+      <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.20" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\LimeLight.Vehicles.Domain\LimeLight.Vehicles.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

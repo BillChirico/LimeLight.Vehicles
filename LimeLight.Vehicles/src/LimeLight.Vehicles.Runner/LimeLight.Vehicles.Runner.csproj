@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <UserSecretsId>dotnet-LimeLight.Vehicles.Worker-479666FD-EF2E-47BF-B5FA-4FF9F12C1E85</UserSecretsId>
+        <AssemblyName>LimeLight.Vehicles.Runner</AssemblyName>
+        <RootNamespace>LimeLight.Vehicles.Runner</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Discord.Net" Version="2.3.0-dev-20200627.3" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.5" />
+        <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.20" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\LimeLight.Vehicles.Domain\LimeLight.Vehicles.Domain.csproj" />
+      <ProjectReference Include="..\LimeLight.Vehicles.Service\LimeLight.Vehicles.Service.csproj" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LimeLight.Vehicles.Runner", "src\LimeLight.Vehicles.Runner\LimeLight.Vehicles.Runner.csproj", "{D1DD98AF-415B-44E1-B5B0-6470E9268AF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LimeLight.Vehicles.Service", "src\LimeLight.Vehicles.Service\LimeLight.Vehicles.Service.csproj", "{48814C11-C194-466C-B5CD-6130082361E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LimeLight.Vehicles.Domain", "src\LimeLight.Vehicles.Domain\LimeLight.Vehicles.Domain.csproj", "{2275AFBD-6638-4782-B70E-9382CD960EA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1DD98AF-415B-44E1-B5B0-6470E9268AF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1DD98AF-415B-44E1-B5B0-6470E9268AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1DD98AF-415B-44E1-B5B0-6470E9268AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1DD98AF-415B-44E1-B5B0-6470E9268AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48814C11-C194-466C-B5CD-6130082361E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48814C11-C194-466C-B5CD-6130082361E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48814C11-C194-466C-B5CD-6130082361E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48814C11-C194-466C-B5CD-6130082361E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2275AFBD-6638-4782-B70E-9382CD960EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2275AFBD-6638-4782-B70E-9382CD960EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2275AFBD-6638-4782-B70E-9382CD960EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2275AFBD-6638-4782-B70E-9382CD960EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
